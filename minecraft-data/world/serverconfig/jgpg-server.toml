@@ -1,0 +1,328 @@
+
+[Guns]
+
+	[Guns.PirateRifle]
+		#PirateRifleDamage
+		#Range: 0.0 ~ 20000.0
+		PirateRifleDamage = 18.0
+		#PirateRiflePower
+		#Range: 0 ~ 200000
+		PirateRiflePower = 16
+		#PirateRifleInnacuracy
+		#Range: 0.01 ~ 20000.0
+		PirateRifleInnacuracy = 0.10000000149011612
+		#PirateRifle - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0 ~ 20000
+		PirateRifleRange = 6
+		#aksRangeDmgRed - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0.1 ~ 20000.0
+		PirateRifleRangeDmgRed = 0.9300000071525574
+		#PirateRifleMeleeDamage
+		#Range: 0.1 ~ 20000.0
+		PirateRifleMeleeDamage = 4.0
+		#PirateRifleShootTime
+		#Range: 0 ~ 20000
+		PirateRifleShootTime = 10
+		#PirateRifleRecoilTime
+		#Range: 0.0 ~ 20000.0
+		PirateRifleRecoilTime = 2.0
+		#PirateRifleRecoilWeight
+		#Range: 0.0 ~ 20000.0
+		PirateRifleRecoilWeight = 2.0
+		#PirateRifleHorizontalRecoil
+		#Range: 0.0 ~ 20000.0
+		PirateRifleHorizontalRecoil = 0.30000001192092896
+		#PirateRifleVerticalRecoil
+		#Range: 0.0 ~ 20000.0
+		PirateRifleVerticalRecoil = 0.4000000059604645
+		#PirateRifleBulletsPerShot
+		#Range: 1 ~ 20000
+		PirateRifleBulletsPerShot = 1
+		#PirateRifleGunpowderToReload
+		#Range: 0 ~ 20000
+		PirateRifleGunpowderToReload = 2
+		#PirateRifleBulletGravity
+		#Range: 0.0 ~ 200000.0
+		PirateRifleBulletGravity = 0.0
+		#PirateRifleAimingSensitivityReduction
+		#Range: 0.0 ~ 20000.0
+		PirateRifleAimingSensitivityReduction = 0.30000001192092896
+
+	[Guns.crafting]
+		#Do you want to prevent players from crafting PirateRifle?
+		"cancel PirateRifle crafting?" = false
+		#How many steel ingots do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		PirateRifleMetalIngots = 8
+		#How many wood planks do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		PirateRifleWoodPlanks = 8
+		#Do you want to prevent players from crafting PiratePistol?
+		"cancel PiratePistol crafting?" = false
+		#How many steel ingots do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		PiratePistolMetalIngots = 4
+		#How many wood planks do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		PiratePistolWoodPlanks = 4
+		#Do you want to prevent players from crafting Trabuco?
+		"cancel Trabuco crafting?" = false
+		#How many steel ingots do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		TrabucoMetalIngots = 10
+		#How many wood planks do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		TrabucoWoodPlanks = 4
+		#Do you want to prevent players from crafting PrimitiveRevolver?
+		"cancel PrimitiveRevolver crafting?" = false
+		#How many steel ingots do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		PrimitiveRevolverMetalIngots = 8
+		#How many wood planks do you think aks should need for crafting?
+		#Range: 0 ~ 99999
+		PrimitiveRevolverWoodPlanks = 4
+
+	[Guns.PiratePistol]
+		#PiratePistolDamage
+		#Range: 0.0 ~ 20000.0
+		PiratePistolDamage = 12.0
+		#PiratePistolPower
+		#Range: 0 ~ 200000
+		PiratePistolPower = 14
+		#PiratePistolInnacuracy
+		#Range: 0.01 ~ 20000.0
+		PiratePistolInnacuracy = 0.30000001192092896
+		#PiratePistol - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0 ~ 20000
+		PiratePistolRange = 4
+		#aksRangeDmgRed - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0.1 ~ 20000.0
+		PiratePistolRangeDmgRed = 0.699999988079071
+		#PiratePistolMeleeDamage
+		#Range: 0.1 ~ 20000.0
+		PiratePistolMeleeDamage = 3.0
+		#PiratePistolShootTime
+		#Range: 0 ~ 20000
+		PiratePistolShootTime = 8
+		#PiratePistolRecoilTime
+		#Range: 0.0 ~ 20000.0
+		PiratePistolRecoilTime = 2.0
+		#PiratePistolRecoilWeight
+		#Range: 0.0 ~ 20000.0
+		PiratePistolRecoilWeight = 2.0
+		#PiratePistolHorizontalRecoil
+		#Range: 0.0 ~ 20000.0
+		PiratePistolHorizontalRecoil = 0.20000000298023224
+		#PiratePistolVerticalRecoil
+		#Range: 0.0 ~ 20000.0
+		PiratePistolVerticalRecoil = 0.20000000298023224
+		#PiratePistolBulletsPerShot
+		#Range: 1 ~ 20000
+		PiratePistolBulletsPerShot = 1
+		#PiratePistolGunpowderToReload
+		#Range: 0 ~ 20000
+		PiratePistolGunpowderToReload = 1
+		#PiratePistolBulletGravity
+		#Range: 0.0 ~ 200000.0
+		PiratePistolBulletGravity = 0.0
+		#PiratePistolAimingSensitivityReduction
+		#Range: 0.0 ~ 20000.0
+		PiratePistolAimingSensitivityReduction = 0.699999988079071
+
+	[Guns.Trabuco]
+		#TrabucoDamage
+		#Range: 0.0 ~ 20000.0
+		TrabucoDamage = 3.0
+		#TrabucoPower
+		#Range: 0 ~ 200000
+		TrabucoPower = 16
+		#TrabucoInnacuracy
+		#Range: 0.01 ~ 20000.0
+		TrabucoInnacuracy = 1.5
+		#Trabuco - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0 ~ 20000
+		TrabucoRange = 2
+		#aksRangeDmgRed - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0.1 ~ 20000.0
+		TrabucoRangeDmgRed = 0.30000001192092896
+		#TrabucoMeleeDamage
+		#Range: 0.1 ~ 20000.0
+		TrabucoMeleeDamage = 7.0
+		#TrabucoShootTime
+		#Range: 0 ~ 20000
+		TrabucoShootTime = 16
+		#TrabucoRecoilTime
+		#Range: 0.0 ~ 20000.0
+		TrabucoRecoilTime = 2.0
+		#TrabucoRecoilWeight
+		#Range: 0.0 ~ 20000.0
+		TrabucoRecoilWeight = 2.0
+		#TrabucoHorizontalRecoil
+		#Range: 0.0 ~ 20000.0
+		TrabucoHorizontalRecoil = 0.6000000238418579
+		#TrabucoVerticalRecoil
+		#Range: 0.0 ~ 20000.0
+		TrabucoVerticalRecoil = 0.6000000238418579
+		#TrabucoBulletsPerShot
+		#Range: 1 ~ 20000
+		TrabucoBulletsPerShot = 8
+		#TrabucoGunpowderToReload
+		#Range: 0 ~ 20000
+		TrabucoGunpowderToReload = 2
+		#TrabucoBulletGravity
+		#Range: 0.0 ~ 200000.0
+		TrabucoBulletGravity = 0.0
+		#TrabucoAimingSensitivityReduction
+		#Range: 0.0 ~ 20000.0
+		TrabucoAimingSensitivityReduction = 0.699999988079071
+
+	[Guns.PrimitiveRevolver]
+		#PrimitiveRevolverDamage
+		#Range: 0.0 ~ 20000.0
+		PrimitiveRevolverDamage = 11.0
+		#PrimitiveRevolverPower
+		#Range: 0 ~ 200000
+		PrimitiveRevolverPower = 14
+		#PrimitiveRevolverInnacuracy
+		#Range: 0.01 ~ 20000.0
+		PrimitiveRevolverInnacuracy = 0.25
+		#PrimitiveRevolver - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0 ~ 20000
+		PrimitiveRevolverRange = 5
+		#aksRangeDmgRed - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0.1 ~ 20000.0
+		PrimitiveRevolverRangeDmgRed = 0.75
+		#PrimitiveRevolverMeleeDamage
+		#Range: 0.1 ~ 20000.0
+		PrimitiveRevolverMeleeDamage = 3.0
+		#PrimitiveRevolverShootTime
+		#Range: 0 ~ 20000
+		PrimitiveRevolverShootTime = 8
+		#PrimitiveRevolverRecoilTime
+		#Range: 0.0 ~ 20000.0
+		PrimitiveRevolverRecoilTime = 2.0
+		#PrimitiveRevolverRecoilWeight
+		#Range: 0.0 ~ 20000.0
+		PrimitiveRevolverRecoilWeight = 2.0
+		#PrimitiveRevolverHorizontalRecoil
+		#Range: 0.0 ~ 20000.0
+		PrimitiveRevolverHorizontalRecoil = 0.20000000298023224
+		#PrimitiveRevolverVerticalRecoil
+		#Range: 0.0 ~ 20000.0
+		PrimitiveRevolverVerticalRecoil = 0.23999999463558197
+		#PrimitiveRevolverBulletsPerShot
+		#Range: 1 ~ 20000
+		PrimitiveRevolverBulletsPerShot = 1
+		#PrimitiveRevolverGunpowderToReload
+		#Range: 0 ~ 20000
+		PrimitiveRevolverGunpowderToReload = 1
+		#PrimitiveRevolverBulletGravity
+		#Range: 0.0 ~ 200000.0
+		PrimitiveRevolverBulletGravity = 0.0
+		#PrimitiveRevolverAimingSensitivityReduction
+		#Range: 0.0 ~ 20000.0
+		PrimitiveRevolverAimingSensitivityReduction = 0.6000000238418579
+
+	[Guns.HeavyHandCannon]
+		#HeavyHandCannonDamage
+		#Range: 0.0 ~ 20000.0
+		HeavyHandCannonDamage = 20.0
+		#HeavyHandCannonPower
+		#Range: 0 ~ 200000
+		HeavyHandCannonPower = 8
+		#HeavyHandCannonInnacuracy
+		#Range: 0.01 ~ 20000.0
+		HeavyHandCannonInnacuracy = 0.6000000238418579
+		#HeavyHandCannon - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0 ~ 20000
+		HeavyHandCannonRange = 8
+		#aksRangeDmgRed - This value will multiply gunDmg when bullet range is rechead - for example: dmgRed: 0.9 dmg: 4 -> 4 * 0.9 = 3.6 <- this will happen every time the range is reached
+		#Range: 0.1 ~ 20000.0
+		HeavyHandCannonRangeDmgRed = 0.8999999761581421
+		#HeavyHandCannonMeleeDamage
+		#Range: 0.1 ~ 20000.0
+		HeavyHandCannonMeleeDamage = 8.0
+		#HeavyHandCannonShootTime
+		#Range: 0 ~ 20000
+		HeavyHandCannonShootTime = 20
+		#HeavyHandCannonRecoilTime
+		#Range: 0.0 ~ 20000.0
+		HeavyHandCannonRecoilTime = 4.0
+		#HeavyHandCannonRecoilWeight
+		#Range: 0.0 ~ 20000.0
+		HeavyHandCannonRecoilWeight = 4.0
+		#HeavyHandCannonHorizontalRecoil
+		#Range: 0.0 ~ 20000.0
+		HeavyHandCannonHorizontalRecoil = 1.0
+		#HeavyHandCannonVerticalRecoil
+		#Range: 0.0 ~ 20000.0
+		HeavyHandCannonVerticalRecoil = 1.0
+		#HeavyHandCannonBulletsPerShot
+		#Range: 1 ~ 20000
+		HeavyHandCannonBulletsPerShot = 1
+		#HeavyHandCannonBulletGravity
+		#Range: 0.0 ~ 200000.0
+		HeavyHandCannonBulletGravity = 0.05000000074505806
+		#HeavyHandCannonGunpowderToReload
+		#Range: 0 ~ 20000
+		HeavyHandCannonGunpowderToReload = 5
+		#HeavyHandCannonAimingSensitivityReduction
+		#Range: 0.0 ~ 20000.0
+		HeavyHandCannonAimingSensitivityReduction = 0.699999988079071
+
+		[Guns.HeavyHandCannon.crafting]
+			#Do you want to prevent players from crafting HeavyHandCannon?
+			"cancel HeavyHandCannon crafting?" = false
+			#How many steel ingots do you think aks should need for crafting?
+			#Range: 0 ~ 99999
+			HeavyHandCannonMetalIngots = 20
+			#How many wood planks do you think aks should need for crafting?
+			#Range: 0 ~ 99999
+			HeavyHandCannonWoodPlanks = 0
+
+	[Guns."Melee Weapons"]
+		SmallHammerHits = [0, 5]
+
+		[Guns."Melee Weapons".SmallHammer]
+			#SmallHammerDamage
+			#Range: 0.0 ~ 20000.0
+			SmallHammerDamage = 5.0
+			#How much range would you like SmallHammer to have?
+			#Range: 0 ~ 20000
+			SmallHammerRange = 0
+
+		[Guns."Melee Weapons".crafting]
+			#How many steel ingots do you think SmallHammer should need for crafting?
+			#Range: 0 ~ 99999
+			SmallHammerMetalIngots = 8
+			#How many wood planks do you think SmallHammer should need for crafting?
+			#Range: 0 ~ 99999
+			SmallHammerWoodPlanks = 5
+			#Do you want to prevent players from crafting SmallHammer?
+			"cancel SmallHammer crafting?" = false
+
+	[Guns.Bullets]
+		#Would you like to be able to craft musketBullet?
+		"Can Craft Musket Bullet?" = true
+		#Would you like to be able to craft trabucoBullet?
+		"Can Craft Trabuco Bullet?" = true
+		#How many bullets would you like to get when you craft musket bullets
+		#Range: 1 ~ 100
+		MusketBulletCraftingResult = 4
+		#How much metal would you like to use for crafting trabucoBullet
+		#Range: 1 ~ 100
+		"Musket Bullet Metal" = 1
+		#How many bullets would you like to get when you craft musket bullets
+		#Range: 1 ~ 100
+		TrabucoBulletCraftingResult = 16
+		#How many bullets would you like to get when you craft heavy hand cannon bullets
+		#Range: 1 ~ 100
+		HeavyHandCannonCraftingResult = 1
+		#How much metal would you like to use for crafting heavy hand cannon bullets
+		#Range: 1 ~ 100
+		"HeavyHandCannonCraftingResult Metal" = 1
+
+	[Guns."General Stuff"]
+		#Should Primitive Revolver consume gunpowder after shooting?
+		"ConsumeGunpowder?" = false
+
