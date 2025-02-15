@@ -1,4 +1,739 @@
-[15Feb2025 01:23:30.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Namalkin: Set own game mode to Survival Mode]
-[15Feb2025 01:23:39.677] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Namalkin lost connection: Disconnected
-[15Feb2025 01:23:39.678] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Namalkin left the game
-[15Feb2025 01:23:49.268] [RCON Client /0:0:0:0:0:0:0:1 #2/INFO] [net.minecraft.server.rcon.thread.RconClient/]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[15Feb2025 20:03:30.204] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[15Feb2025 20:03:30.208] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.6 by Eclipse Adoptium; OS Linux arch amd64 version 6.8.0-52-generic
+[15Feb2025 20:03:33.912] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[15Feb2025 20:03:34.072] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/data/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[15Feb2025 20:03:34.447] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.0/fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[15Feb2025 20:03:34.451] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.0/javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[15Feb2025 20:03:34.454] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.0/lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[15Feb2025 20:03:34.456] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.0/mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[15Feb2025 20:03:34.706] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[15Feb2025 20:03:37.358] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[15Feb2025 20:03:37.365] [main/ERROR] [mixin/]: Mixin config pirates_treasures.mixins.json does not specify "minVersion" property
+[15Feb2025 20:03:37.373] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[15Feb2025 20:03:49.484] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
+[15Feb2025 20:03:49.492] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
+[15Feb2025 20:03:49.569] [modloading-worker-0/INFO] [com.jg.jgpg.utils.LogUtils/]: DamageTypeRegistries: Registering damage type: melee
+[15Feb2025 20:03:50.228] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: The object net.minecraft.sounds.SoundEvent@2cfc81f8 has been registered twice for the same name treechop:chop_wood.
+[15Feb2025 20:03:50.782] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /data/config/treechop-common.toml is not correct. Correcting
+[15Feb2025 20:03:50.783] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mod was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.784] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mod.enabled was corrected from null to its default, true. 
+[15Feb2025 20:03:50.784] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mod.printDebugInfo was corrected from null to its default, true. 
+[15Feb2025 20:03:50.788] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.789] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.choppingEnabled was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.789] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.choppingEnabled.canBeFalse was corrected from null to its default, true. 
+[15Feb2025 20:03:50.790] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.choppingEnabled.canBeTrue was corrected from null to its default, true. 
+[15Feb2025 20:03:50.790] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.fellingEnabled was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.791] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.fellingEnabled.canBeFalse was corrected from null to its default, true. 
+[15Feb2025 20:03:50.791] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.fellingEnabled.canBeTrue was corrected from null to its default, true. 
+[15Feb2025 20:03:50.792] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.sneakBehavior was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.792] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.sneakBehavior.canBeInvertChopping was corrected from null to its default, true. 
+[15Feb2025 20:03:50.792] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.sneakBehavior.canBeNone was corrected from null to its default, true. 
+[15Feb2025 20:03:50.792] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.sneakBehavior.canBeInvertFelling was corrected from null to its default, true. 
+[15Feb2025 20:03:50.792] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.treeMustHaveLeaves was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.793] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.treeMustHaveLeaves.canBeFalse was corrected from null to its default, true. 
+[15Feb2025 20:03:50.793] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.treeMustHaveLeaves.canBeTrue was corrected from null to its default, true. 
+[15Feb2025 20:03:50.793] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.chopInCreativeMode was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.793] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.chopInCreativeMode.canBeFalse was corrected from null to its default, true. 
+[15Feb2025 20:03:50.793] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key permissions.chopInCreativeMode.canBeTrue was corrected from null to its default, true. 
+[15Feb2025 20:03:50.794] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key general was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.794] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key general.dropLootForChoppedBlocks was corrected from null to its default, true. 
+[15Feb2025 20:03:50.794] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key general.dropLootOnFirstChop was corrected from null to its default, false. 
+[15Feb2025 20:03:50.796] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.796] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.maxTreeBlocks was corrected from null to its default, 1024. 
+[15Feb2025 20:03:50.796] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.maxLeavesBlocks was corrected from null to its default, 1024. 
+[15Feb2025 20:03:50.797] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.breakLeaves was corrected from null to its default, true. 
+[15Feb2025 20:03:50.797] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.ignorePersistentLeaves was corrected from null to its default, true. 
+[15Feb2025 20:03:50.797] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.maxBreakLeavesDistance was corrected from null to its default, 7. 
+[15Feb2025 20:03:50.798] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.logs was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.798] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.logs.blocks was corrected from null to its default, [#treechop:choppables, #minecraft:logs]. 
+[15Feb2025 20:03:50.799] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.logs.exceptions was corrected from null to its default, [minecraft:bamboo, #dynamictrees:branches, dynamictrees:trunk_shell]. 
+[15Feb2025 20:03:50.800] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.leaves was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.800] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.leaves.blocks was corrected from null to its default, [#treechop:leaves_like, #minecraft:leaves, pamhc2trees:pam[a-z]+]. 
+[15Feb2025 20:03:50.801] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key treeDetection.leaves.exceptions was corrected from null to its default, []. 
+[15Feb2025 20:03:50.802] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.803] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.algorithm was corrected from null to its default, LOGARITHMIC. 
+[15Feb2025 20:03:50.803] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.rounding was corrected from null to its default, NEAREST. 
+[15Feb2025 20:03:50.803] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.canRequireMoreChopsThanBlocks was corrected from null to its default, false. 
+[15Feb2025 20:03:50.803] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.logarithmic was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.804] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.logarithmic.a was corrected from null to its default, 10.0. 
+[15Feb2025 20:03:50.805] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.linear was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.806] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.linear.chopsPerBlock was corrected from null to its default, 1.0. 
+[15Feb2025 20:03:50.806] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key chopCounting.linear.baseNumChops was corrected from null to its default, 0.0. 
+[15Feb2025 20:03:50.810] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.810] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.810] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.choppingRequiresCorrectToolForDrops was corrected from null to its default, true. 
+[15Feb2025 20:03:50.810] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.choppingRequiresFastBreakingTool was corrected from null to its default, false. 
+[15Feb2025 20:03:50.810] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.preventChoppingOnRightClick was corrected from null to its default, false. 
+[15Feb2025 20:03:50.810] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.preventChopRecursion was corrected from null to its default, true. 
+[15Feb2025 20:03:50.812] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.blacklist was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.812] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.blacklist.blacklistOrWhitelist was corrected from null to its default, BLACKLIST. 
+[15Feb2025 20:03:50.813] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.blacklist.items was corrected from null to its default, [botania:terra_axe, @lumberjack, mekanism:atomic_disassembler, practicaltools:diamond_greataxe, practicaltools:golden_greataxe, practicaltools:iron_greataxe, practicaltools:netherite_greataxe, twilightforest:giant_pickaxe]. 
+[15Feb2025 20:03:50.814] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.fakePlayerChopSettings was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.814] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.fakePlayerChopSettings.choppingEnabled was corrected from null to its default, false. 
+[15Feb2025 20:03:50.815] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.fakePlayerChopSettings.fellingEnabled was corrected from null to its default, true. 
+[15Feb2025 20:03:50.815] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.general.fakePlayerChopSettings.treesMustHaveLeaves was corrected from null to its default, true. 
+[15Feb2025 20:03:50.816] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.816] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.hugeMushrooms was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.817] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.hugeMushrooms.logs was corrected from null to its default, [#forge:mushroom_stems]. 
+[15Feb2025 20:03:50.817] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.hugeMushrooms.leaves was corrected from null to its default, [#forge:mushroom_caps]. 
+[15Feb2025 20:03:50.818] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.hugeFungi was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.818] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.hugeFungi.logs was corrected from null to its default, [#minecraft:crimson_stems, #minecraft:warped_stems]. 
+[15Feb2025 20:03:50.819] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.hugeFungi.leaves was corrected from null to its default, [#minecraft:wart_blocks, minecraft:shroomlight]. 
+[15Feb2025 20:03:50.819] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.problematicLeavesTrees was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.820] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.problematicLeavesTrees.logs was corrected from null to its default, [tropicraft:.*_log(_.*)?, mysticbiomes:.*_log, betternether:.*_bark, betternether:.*_log, alexscaves:.*_log, alexscaves:pewen_wood]. 
+[15Feb2025 20:03:50.820] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.trees.problematicLeavesTrees.leaves was corrected from null to its default, [tropicraft:.*_leaves(_.*)?, betternether:.*_leaves, regions_unexplored:brimwood_leaves, alexscaves:.*_branch, alexscaves:pewen_pines]. 
+[15Feb2025 20:03:50.821] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.carryOn was corrected from null to its default, true. 
+[15Feb2025 20:03:50.821] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.projectMMO was corrected from null to its default, true. 
+[15Feb2025 20:03:50.821] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.theOneProbe was corrected from null to its default, true. 
+[15Feb2025 20:03:50.821] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.terraformers was corrected from null to its default, true. 
+[15Feb2025 20:03:50.822] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.multiMine was corrected from null to its default, true. 
+[15Feb2025 20:03:50.822] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.apotheosis was corrected from null to its default, true. 
+[15Feb2025 20:03:50.822] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.silentgear was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.822] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.silentgear.enabled was corrected from null to its default, true. 
+[15Feb2025 20:03:50.822] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.silentgear.sawChops was corrected from null to its default, 5. 
+[15Feb2025 20:03:50.823] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.tinkersConstruct was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.823] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.tinkersConstruct.enabled was corrected from null to its default, true. 
+[15Feb2025 20:03:50.824] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.tinkersConstruct.treeBreakingTools was corrected from null to its default, 5. 
+[15Feb2025 20:03:50.824] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.tinkersConstruct.woodBreakingTools was corrected from null to its default, 1. 
+[15Feb2025 20:03:50.825] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.tinkersConstruct.expandedMultiplier was corrected from null to its default, 2.0. 
+[15Feb2025 20:03:50.825] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.API was corrected from null to its default, SimpleCommentedConfig:{}. 
+[15Feb2025 20:03:50.825] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key compatibility.API.verbose was corrected from null to its default, false. 
+[15Feb2025 20:03:51.243] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_ships] Starting version check at https://api.modrinth.com/updates/M185nxi6/forge_updates.json
+[15Feb2025 20:03:52.118] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_ships] Found status: OUTDATED Current: 3.0.3 Target: 3.0.3+mod
+[15Feb2025 20:03:52.118] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[15Feb2025 20:03:52.388] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
+[15Feb2025 20:03:52.749] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15Feb2025 20:03:52.998] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Object did not get ID it asked for. Name: treechop:chopped_log Expected: 1058 Got: 1085
+[15Feb2025 20:03:52.999] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: treechop:chop_wood Expected: 1490 Got: 1515
+[15Feb2025 20:03:53.808] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/data/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23117!/assets/.mcassetsroot' uses unexpected schema
+[15Feb2025 20:03:53.808] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/data/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23117!/data/.mcassetsroot' uses unexpected schema
+[15Feb2025 20:03:56.814] [Worker-Main-2/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag forge:sea_green_vegetation as it is missing following references: minecraft:tall_seagrass (from underdasea-1.2.2-forge-1.20.1.jar)
+[15Feb2025 20:03:58.258] [Worker-Main-3/ERROR] [net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener/]: Couldn't parse data file underdasea:thunderbolt_recipe from underdasea:recipes/thunderbolt_recipe.json
+com.google.gson.JsonParseException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 39 path $.type
+	at net.minecraft.util.GsonHelper.m_13780_(GsonHelper.java:526) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	at net.minecraft.util.GsonHelper.m_263475_(GsonHelper.java:531) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	at net.minecraft.util.GsonHelper.m_13776_(GsonHelper.java:581) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	at net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener.m_278771_(SimpleJsonResourceReloadListener.java:41) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	at net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener.m_5944_(SimpleJsonResourceReloadListener.java:29) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	at net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener.m_5944_(SimpleJsonResourceReloadListener.java:17) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10786_(SimplePreparableReloadListener.java:11) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 39 path $.type
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1657) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1463) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1414) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:503) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:422) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:779) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:725) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapters$34$1.read(TypeAdapters.java:1007) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraft.util.GsonHelper.m_13780_(GsonHelper.java:524) ~[server-1.20.1-20230612.114412-srg.jar%23117!/:?]
+	... 13 more
+[15Feb2025 20:03:58.364] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 11 recipes
+[15Feb2025 20:03:58.487] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1330 advancements
+[15Feb2025 20:03:59.790] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[15Feb2025 20:03:59.791] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[15Feb2025 20:03:59.791] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[15Feb2025 20:03:59.791] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[15Feb2025 20:03:59.943] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[15Feb2025 20:04:00.022] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[15Feb2025 20:04:00.200] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15Feb2025 20:04:00.201] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[15Feb2025 20:04:00.201] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15Feb2025 20:04:00.201] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[15Feb2025 20:04:00.582] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[15Feb2025 20:04:00.605] [Netty Epoll Server IO #1/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[15Feb2025 20:04:05.088] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[15Feb2025 20:04:05.709] [Netty Epoll Server IO #2/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[15Feb2025 20:04:10.038] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.138] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.159] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.168] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.179] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.186] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.194] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.201] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.208] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.225] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.236] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[15Feb2025 20:04:10.590] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
+[15Feb2025 20:04:10.817] [Netty Epoll Server IO #3/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[15Feb2025 20:04:11.125] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 53%
+[15Feb2025 20:04:11.528] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 6439 ms
+[15Feb2025 20:04:11.529] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (11.303s)! For help, type "help"
+[15Feb2025 20:04:11.529] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting remote control listener
+[15Feb2025 20:04:11.654] [Server thread/INFO] [net.minecraft.server.rcon.thread.GenericThread/]: Thread RCON Listener started
+[15Feb2025 20:04:11.654] [Server thread/INFO] [net.minecraft.server.rcon.thread.RconThread/]: RCON running on 0.0.0.0:25575
+[15Feb2025 20:04:11.678] [LanServerPinger #1/WARN] [net.minecraft.client.server.LanServerPinger/]: LanServerPinger: Network is unreachable
+[15Feb2025 20:04:11.744] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[15Feb2025 20:04:19.759] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Namalkin[/81.200.248.177:12574] logged in with entity id 247 at (119.9725451598541, 81.5, 60.64842051687062)
+[15Feb2025 20:04:19.869] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Namalkin joined the game
+[15Feb2025 20:13:07.418] [Netty Epoll Server IO #7/ERROR] [net.minecraftforge.network.NetworkRegistry/NETREGISTRY]: Channels [minecraft:treechop-channel] rejected their client side version number
+[15Feb2025 20:13:07.419] [Netty Epoll Server IO #7/ERROR] [net.minecraftforge.network.HandshakeHandler/FMLHANDSHAKE]: Terminating connection with client, mismatched mod list
+[15Feb2025 20:13:07.467] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@7b2b130c[id=<null>,name=Yaro,properties={},legacy=false] (/178.66.114.112:49846) lost connection: Connection closed - mismatched mod channel list
+[15Feb2025 20:15:15.232] [Netty Epoll Server IO #4/ERROR] [net.minecraftforge.network.NetworkRegistry/NETREGISTRY]: Channels [minecraft:treechop-channel] rejected their client side version number
+[15Feb2025 20:15:15.233] [Netty Epoll Server IO #4/ERROR] [net.minecraftforge.network.HandshakeHandler/FMLHANDSHAKE]: Terminating connection with client, mismatched mod list
+[15Feb2025 20:15:15.256] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@4cae9e6f[id=<null>,name=Yaro,properties={},legacy=false] (/178.66.114.112:50155) lost connection: Connection closed - mismatched mod channel list
+[15Feb2025 20:15:28.677] [Netty Epoll Server IO #6/ERROR] [net.minecraftforge.network.NetworkRegistry/NETREGISTRY]: Channels [minecraft:treechop-channel] rejected their client side version number
+[15Feb2025 20:15:28.678] [Netty Epoll Server IO #6/ERROR] [net.minecraftforge.network.HandshakeHandler/FMLHANDSHAKE]: Terminating connection with client, mismatched mod list
+[15Feb2025 20:15:28.704] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@339a7672[id=<null>,name=Yaro,properties={},legacy=false] (/178.66.114.112:50176) lost connection: Connection closed - mismatched mod channel list
+[15Feb2025 20:19:41.379] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Yaro[/178.66.114.112:50274] logged in with entity id 2339 at (-116.2984120134012, 111.0, 318.5618493858228)
+[15Feb2025 20:19:41.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro joined the game
+[15Feb2025 20:19:47.875] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> привА
+[15Feb2025 20:19:51.691] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> попробуй дерево срубить
+[15Feb2025 20:20:03.965] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> опа
+[15Feb2025 20:20:12.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что там
+[15Feb2025 20:22:43.931] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> что это с деревом
+[15Feb2025 20:22:48.211] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что с ним
+[15Feb2025 20:22:53.460] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> руби полностью
+[15Feb2025 20:22:59.680] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пока не упадёт
+[15Feb2025 20:23:02.063] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> оно всё меньше
+[15Feb2025 20:23:30.267] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> кайф
+[15Feb2025 20:23:35.862] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> получилось да?
+[15Feb2025 20:23:40.623] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ))
+[15Feb2025 20:24:41.911] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> возвращаешься?
+[15Feb2025 20:24:50.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 20:26:51.571] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> о
+[15Feb2025 20:26:57.331] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что там
+[15Feb2025 20:27:00.271] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> случай но железо по пути
+[15Feb2025 20:27:04.538] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> шикос
+[15Feb2025 20:27:08.022] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> одно)
+[15Feb2025 20:29:03.664] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> даня
+[15Feb2025 20:29:05.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> а
+[15Feb2025 20:29:07.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ячто-о нашла
+[15Feb2025 20:29:10.836] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что там
+[15Feb2025 20:29:20.239] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> оно большое и розвое
+[15Feb2025 20:29:24.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой
+[15Feb2025 20:29:28.022] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> оновдалике
+[15Feb2025 20:29:31.084] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хммм
+[15Feb2025 20:29:37.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> побежим туда?
+[15Feb2025 20:29:45.364] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 20:30:00.125] [Worker-Main-1/WARN] [net.minecraft.world.level.levelgen.heightproviders.UniformHeight/]: Empty height range: [0 absolute--64 absolute]
+[15Feb2025 20:31:05.864] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> уже ночь?
+[15Feb2025 20:31:07.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> срочно спать
+[15Feb2025 20:31:25.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты когда домой?
+[15Feb2025 20:32:52.265] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Юля тебе там не опасно ночью?
+[15Feb2025 20:32:53.620] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты где?
+[15Feb2025 20:33:52.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ура
+[15Feb2025 20:33:55.227] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что там
+[15Feb2025 20:33:56.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> яспаслась
+[15Feb2025 20:33:59.363] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ура
+[15Feb2025 20:34:02.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> как никак ночь
+[15Feb2025 20:34:02.712] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я выжилв
+[15Feb2025 20:34:05.672] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> поела?
+[15Feb2025 20:34:17.511] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я не могла ответить за мной мелкий быстрый бежал
+[15Feb2025 20:34:21.542] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> воу
+[15Feb2025 20:34:23.515] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сурово
+[15Feb2025 20:34:24.744] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> и не могла лечь
+[15Feb2025 20:34:28.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> под водой можно от них
+[15Feb2025 20:34:30.036] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> потому чтоо н бежалахах)
+[15Feb2025 20:34:36.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> сейчас сделаю кровать и на сон)
+[15Feb2025 20:34:46.581] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я под водой и ушла)
+[15Feb2025 20:34:50.236] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ))
+[15Feb2025 20:34:55.183] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сон?
+[15Feb2025 20:35:04.237] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> акккуратне с криперами
+[15Feb2025 20:35:45.117] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> спасена
+[15Feb2025 20:36:05.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> УР
+[15Feb2025 20:36:08.186] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> возвращаюсь
+[15Feb2025 20:36:49.671] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я нашл замок
+[15Feb2025 20:36:52.911] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что где
+[15Feb2025 20:36:53.511] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> по пути
+[15Feb2025 20:36:55.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> какой
+[15Feb2025 20:37:01.485] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> тут вообще
+[15Feb2025 20:37:03.061] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> круто но надо сходит
+[15Feb2025 20:37:07.862] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я покажу
+[15Feb2025 20:37:21.324] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> бегу домой
+[15Feb2025 20:44:43.614] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> стоп
+[15Feb2025 20:44:46.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что там
+[15Feb2025 20:44:47.984] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> этот замок
+[15Feb2025 20:44:51.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> это...
+[15Feb2025 20:44:55.164] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что тма
+[15Feb2025 20:44:58.364] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что там
+[15Feb2025 20:44:59.292] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> это же наша деревня
+[15Feb2025 20:45:05.111] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> тот о котором ты говорила?
+[15Feb2025 20:45:09.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> кажется
+[15Feb2025 20:45:10.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 20:45:16.714] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ну да я его обустроил
+[15Feb2025 20:45:22.192] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 20:45:35.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ты построл замок?00
+[15Feb2025 20:45:40.617] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> крепость скорее
+[15Feb2025 20:46:00.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> и катаешь жителей по кругу ада?
+[15Feb2025 20:46:12.763] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ахах
+[15Feb2025 20:46:15.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> они сами сели
+[15Feb2025 20:46:25.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> а где ты
+[15Feb2025 20:46:35.534] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> вай
+[15Feb2025 20:46:41.866] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ты ручейкипустил
+[15Feb2025 20:46:45.611] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> угугу
+[15Feb2025 20:47:04.231] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я вижу тебя!
+[15Feb2025 20:47:05.535] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> у нас кошка
+[15Feb2025 20:47:07.430] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> привА
+[15Feb2025 20:47:09.144] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> на территори
+[15Feb2025 20:47:10.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> аахаахх
+[15Feb2025 20:47:13.618] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> о нет
+[15Feb2025 20:47:17.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> будет цветы есть
+[15Feb2025 20:47:23.674] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> но в майнкрафте они не едят цветы
+[15Feb2025 20:47:29.813] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> погнали посмотришь на мост
+[15Feb2025 20:47:32.266] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пока ночь
+[15Feb2025 20:47:35.891] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> оооооооооооооооо мой БОГ
+[15Feb2025 20:47:44.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ЧТО ТЫ СДЕЛАЛ
+[15Feb2025 20:47:48.572] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> крепость
+[15Feb2025 20:48:00.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ДАНЯ
+[15Feb2025 20:48:03.389] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> дааа
+[15Feb2025 20:48:10.694] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> КАК ТЫ МОГ СДЕЛАТЬ НЕЧТО НАСТОЛЬКО КРУТОЕ
+[15Feb2025 20:48:15.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я постарался
+[15Feb2025 20:48:19.042] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я задумал задумл
+[15Feb2025 20:48:26.675] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> и потом оказалось что исполняю задуманное
+[15Feb2025 20:48:39.724] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> это только начало
+[15Feb2025 20:48:43.459] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ещё многое можно
+[15Feb2025 20:48:46.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пошли на мост
+[15Feb2025 20:48:52.311] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ТЫ ГРАДОСТРОИТЕЛЬ
+[15Feb2025 20:48:56.610] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> есс
+[15Feb2025 20:49:15.171] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> мост
+[15Feb2025 20:49:19.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нет не спать
+[15Feb2025 20:49:19.611] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ТАК
+[15Feb2025 20:49:20.836] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> на мост
+[15Feb2025 20:49:28.218] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> НА МОЕЙ КРОВАТИ СПИТ НАШ СОСЕД АХАХ
+[15Feb2025 20:49:31.378] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ахаха
+[15Feb2025 20:49:33.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пошли на мост
+[15Feb2025 20:49:41.711] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Яро вставай
+[15Feb2025 20:49:46.727] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> на мост нужно ночью смотреть
+[15Feb2025 20:49:55.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> Я ТУТ
+[15Feb2025 20:50:04.712] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ЧТООООООООООООООООООООООООООООООООООООООООООО
+[15Feb2025 20:50:28.765] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> наше поле
+[15Feb2025 20:50:59.207] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> а тут зомби уж
+[15Feb2025 20:51:10.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> бежим
+[15Feb2025 20:51:44.085] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> завтра из лука постреляем
+[15Feb2025 20:52:21.071] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ЧТО ОН ТВОРИТ
+[15Feb2025 20:52:28.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сосед ахах
+[15Feb2025 20:52:30.687] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> опать сосед
+[15Feb2025 20:52:34.712] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> на них домов не хватает
+[15Feb2025 20:52:49.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ахах
+[15Feb2025 20:52:53.663] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я тебя2 щита
+[15Feb2025 20:52:57.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой
+[15Feb2025 20:53:00.081] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> это твоё?
+[15Feb2025 20:53:02.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 20:53:04.209] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ахахх
+[15Feb2025 20:55:32.259] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> погнади
+[15Feb2025 20:55:34.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ты очень классно тут вс настроил)
+[15Feb2025 20:55:37.392] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> спасибо
+[15Feb2025 20:55:38.243] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мостогонь
+[15Feb2025 20:55:49.424] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> 🔥
+[15Feb2025 20:55:59.823] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мы смотреть розовое и сразу отплываем,
+[15Feb2025 20:56:00.560] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> погнали из лука стрелять
+[15Feb2025 20:56:02.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ?
+[15Feb2025 20:56:15.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> из лука давай постреляем и к розовому
+[15Feb2025 20:56:20.366] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> давай
+[15Feb2025 20:56:29.111] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пошли
+[15Feb2025 20:56:36.185] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> умен6 страел
+[15Feb2025 20:56:41.689] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я всё приготовил
+[15Feb2025 20:57:01.425] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> давай по очереди
+[15Feb2025 20:57:10.572] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сначала ты стреляешь в меня а я закрываюсь щитом
+[15Feb2025 20:57:11.040] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> давай
+[15Feb2025 20:57:12.264] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> потом я
+[15Feb2025 20:57:27.718] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> стреляй
+[15Feb2025 20:57:38.461] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro has made the advancement [Take Aim]
+[15Feb2025 20:57:44.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой надо дальше отойти аха
+[15Feb2025 20:57:58.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> стой
+[15Feb2025 20:58:00.756] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> мы же по очереди
+[15Feb2025 20:58:06.675] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты третишь стрелы
+[15Feb2025 20:58:08.264] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ахах
+[15Feb2025 20:58:09.711] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> тратишь
+[15Feb2025 20:58:17.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ая думала мы о победного
+[15Feb2025 20:58:18.888] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нельзя попадать
+[15Feb2025 20:58:28.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> еахах
+[15Feb2025 20:58:31.883] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> надо попадать в щиты
+[15Feb2025 20:58:35.669] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> одну ты стреляешь одну я
+[15Feb2025 20:58:42.531] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> отойдём от лошади
+[15Feb2025 20:58:45.194] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> о
+[15Feb2025 20:58:46.964] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ок
+[15Feb2025 20:58:59.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> давай
+[15Feb2025 20:59:17.871] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> АХАХАХАХ
+[15Feb2025 20:59:20.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ЭНДЕРМЕН ЭТОТ
+[15Feb2025 20:59:28.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты куда убегаешь
+[15Feb2025 20:59:30.874] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вставай прямо
+[15Feb2025 20:59:32.943] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> мне в щит надо
+[15Feb2025 20:59:38.161] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я двужущаяся мишень
+[15Feb2025 20:59:42.456] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro has made the advancement [Not Today, Thank You]
+[15Feb2025 20:59:42.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Namalkin has made the advancement [Take Aim]
+[15Feb2025 20:59:50.456] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты отбила?
+[15Feb2025 20:59:57.172] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> да постой
+[15Feb2025 21:00:02.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> надо ждать пока я щит поставлю
+[15Feb2025 21:00:07.712] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> окс
+[15Feb2025 21:00:15.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> стреляй
+[15Feb2025 21:00:22.616] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> урааааааа
+[15Feb2025 21:01:12.381] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> у тебя получается защищаться?
+[15Feb2025 21:01:15.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 21:01:25.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мне нравится наша тренировка
+[15Feb2025 21:02:00.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> у меня закончились стрелы
+[15Feb2025 21:02:05.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ура)))
+[15Feb2025 21:02:17.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> когда щитом защищаешься убирай из рук лук, надо переключаться
+[15Feb2025 21:02:30.664] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я переключаюсь
+[15Feb2025 21:02:32.210] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> смотри а можно переключаться нажимая на F
+[15Feb2025 21:02:48.715] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> это очень быстро, попробуй на F
+[15Feb2025 21:03:09.171] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вот и пробуй использоваьт с F то лук то щит
+[15Feb2025 21:03:10.418] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> действительно быстро
+[15Feb2025 21:03:20.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> с F ты можешь использовать и лук и щит
+[15Feb2025 21:03:26.960] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> теперь двац
+[15Feb2025 21:03:35.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой мы близко
+[15Feb2025 21:03:40.641] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> в тебя от щита отрекошетило
+[15Feb2025 21:03:54.273] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> у меня щит сломался ахах
+[15Feb2025 21:05:18.588] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> мы можем устроиться на втором этаже раз гости так хотят на первом спать
+[15Feb2025 21:05:45.411] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хочешь покататься на вагонетке?
+[15Feb2025 21:06:01.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 21:06:28.220] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> гоо
+[15Feb2025 21:06:39.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> го
+[15Feb2025 21:06:54.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> f5
+[15Feb2025 21:07:40.969] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> привА
+[15Feb2025 21:07:47.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> как тебе
+[15Feb2025 21:08:05.007] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мне очень нравится)
+[15Feb2025 21:08:08.812] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я рад
+[15Feb2025 21:08:24.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ☻
+[15Feb2025 21:08:33.612] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ахаха в нас мобы пытаются попасть
+[15Feb2025 21:08:44.776] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> это самое шикарное ахах
+[15Feb2025 21:08:49.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хаахахах
+[15Feb2025 21:08:50.109] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мы под обстрелом
+[15Feb2025 21:09:21.912] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ☻
+[15Feb2025 21:09:52.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> крепость!
+[15Feb2025 21:10:53.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой
+[15Feb2025 21:10:57.210] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> мы врезались
+[15Feb2025 21:11:17.777] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> привА
+[15Feb2025 21:11:19.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ахахахаа
+[15Feb2025 21:12:18.992] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> прива)
+[15Feb2025 21:12:42.271] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> посмотри в тг как
+[15Feb2025 21:13:25.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> итак
+[15Feb2025 21:13:28.209] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> го на розовые
+[15Feb2025 21:13:35.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> го
+[15Feb2025 21:14:07.378] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> стрелы есть?
+[15Feb2025 21:14:26.674] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> гоо ты где?
+[15Feb2025 21:14:33.320] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я у загона
+[15Feb2025 21:14:56.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> го
+[15Feb2025 21:15:03.869] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> погодь добавлю проход в закон
+[15Feb2025 21:15:42.292] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> извини
+[15Feb2025 21:15:46.534] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вооо
+[15Feb2025 21:16:03.207] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> через это можно проходить
+[15Feb2025 21:16:31.110] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> урааа)
+[15Feb2025 21:16:34.441] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> погнали
+[15Feb2025 21:16:39.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> только вот возьми
+[15Feb2025 21:16:55.270] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> супер
+[15Feb2025 21:17:35.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> воу
+[15Feb2025 21:17:43.916] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> моя крепость))
+[15Feb2025 21:17:47.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ))
+[15Feb2025 21:18:15.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ты где
+[15Feb2025 21:18:28.111] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> воу гора
+[15Feb2025 21:19:01.007] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro was slain by Enderman
+[15Feb2025 21:19:04.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> неееет
+[15Feb2025 21:19:10.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нельзя смотреть в глаза им
+[15Feb2025 21:19:14.822] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> они сильны
+[15Feb2025 21:19:19.937] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я смотрю в глаза страху
+[15Feb2025 21:19:21.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> аахахх
+[15Feb2025 21:19:34.166] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> на само деле я даже не поняла что посмотрела
+[15Feb2025 21:19:44.870] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я собрал твои вещи
+[15Feb2025 21:19:55.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> не все правда
+[15Feb2025 21:19:56.513] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я несусь
+[15Feb2025 21:19:58.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> беги пока не пропали
+[15Feb2025 21:23:06.438] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Яро это вишня!
+[15Feb2025 21:23:10.142] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да)
+[15Feb2025 21:23:37.309] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мне она очень нравится)
+[15Feb2025 21:23:39.010] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> забираю одну
+[15Feb2025 21:23:47.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> теперь у меня ес ть любимое дерево)
+[15Feb2025 21:23:51.141] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Яро
+[15Feb2025 21:23:53.773] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> а может
+[15Feb2025 21:23:55.444] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> срубить?
+[15Feb2025 21:24:00.263] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> и отнести домой
+[15Feb2025 21:24:12.725] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> или ты не хочешь
+[15Feb2025 21:24:14.195] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> нет
+[15Feb2025 21:24:19.009] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хорошо
+[15Feb2025 21:24:24.133] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> спатьспатьспать
+[15Feb2025 21:24:25.711] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мы осаим е на природе)
+[15Feb2025 21:24:34.714] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> оставим на природе её
+[15Feb2025 21:24:38.859] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> да
+[15Feb2025 21:26:00.878] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> поделись стрелами
+[15Feb2025 21:26:23.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro was slain by Enderman
+[15Feb2025 21:26:29.265] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> не смотри на них
+[15Feb2025 21:26:34.022] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> и не бей
+[15Feb2025 21:26:38.660] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ахах
+[15Feb2025 21:26:42.310] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я не смотрела
+[15Feb2025 21:26:44.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> он гонит
+[15Feb2025 21:26:53.828] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я вообще тебя фоткала
+[15Feb2025 21:26:57.437] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> с сакурой
+[15Feb2025 21:26:59.165] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ахаах
+[15Feb2025 21:27:04.669] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> поделишься стрелами?
+[15Feb2025 21:27:10.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> скаж ему что мне нет до него дела
+[15Feb2025 21:27:30.661] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Юля мне бы стрел
+[15Feb2025 21:27:37.816] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> спасибор
+[15Feb2025 21:27:38.827] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> )
+[15Feb2025 21:28:07.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> фоткай
+[15Feb2025 21:28:34.830] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> го
+[15Feb2025 21:28:35.631] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> кактут спокойно)
+[15Feb2025 21:28:47.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> надевай броню
+[15Feb2025 21:28:56.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я чувствую себя как мире духов из мультфильма аватар легенда о корре
+[15Feb2025 21:29:03.816] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ))
+[15Feb2025 21:30:46.865] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> гооо
+[15Feb2025 21:30:50.860] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты хотела что-то показать ещё
+[15Feb2025 21:30:58.162] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> или в бой уже?
+[15Feb2025 21:31:18.459] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 21:31:19.091] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> в бой? вернём наш корабль?
+[15Feb2025 21:31:22.965] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> го в бой
+[15Feb2025 21:31:28.610] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> УРААААААААААА В АТАКУ!
+[15Feb2025 21:31:31.592] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> но давай знаешь каак
+[15Feb2025 21:31:33.110] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> стой
+[15Feb2025 21:31:37.671] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> а
+[15Feb2025 21:31:42.632] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мыдобежим до их огова
+[15Feb2025 21:31:47.909] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> логова
+[15Feb2025 21:31:51.117] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> дааа
+[15Feb2025 21:31:54.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> обоснуемся на берегу
+[15Feb2025 21:31:55.375] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> и будем стрелять по лодкам
+[15Feb2025 21:32:10.984] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нам бы подзорная труба но нам нужно найти секретный ингридиент
+[15Feb2025 21:32:13.694] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> и возведём крепость пока они нас не видят
+[15Feb2025 21:32:17.459] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> но его трудно найти
+[15Feb2025 21:32:20.375] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> он под землёй
+[15Feb2025 21:32:23.276] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> а потом спровоцируем их на атаку
+[15Feb2025 21:32:25.975] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> давай
+[15Feb2025 21:32:30.211] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> и будм отсреливать
+[15Feb2025 21:32:35.579] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> и лаву лить
+[15Feb2025 21:32:35.767] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пошли на базу выходим на рассвете
+[15Feb2025 21:32:49.765] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> лаву? сожгём их корабль?Г
+[15Feb2025 21:32:51.259] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мы их в покое не ставим
+[15Feb2025 21:32:55.912] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> нет
+[15Feb2025 21:33:09.080] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> в бой
+[15Feb2025 21:33:10.727] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> сожжём их когда они будут на нашу крепость
+[15Feb2025 21:33:24.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> они кстати приходили когда я крепость отстраивал
+[15Feb2025 21:33:34.472] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> големы остановили разведчиков
+[15Feb2025 21:33:37.060] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> и рейда не было
+[15Feb2025 21:33:56.660] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> идём
+[15Feb2025 21:36:07.963] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> поплыли в бой!
+[15Feb2025 21:36:10.920] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я знаю где они
+[15Feb2025 21:36:20.219] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> надо лаву взять
+[15Feb2025 21:36:24.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я взял
+[15Feb2025 21:36:32.638] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> и из чего крепость будем строить на беегу
+[15Feb2025 21:36:32.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> она всегда со мной
+[15Feb2025 21:36:34.873] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я же боец
+[15Feb2025 21:36:40.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хмм хорошо
+[15Feb2025 21:36:41.291] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> отлично
+[15Feb2025 21:37:29.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> и еды
+[15Feb2025 21:37:38.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я взял еды и ресурсов
+[15Feb2025 21:37:39.412] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> гоооо
+[15Feb2025 21:38:04.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты гдк
+[15Feb2025 21:38:08.909] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нам через мост
+[15Feb2025 21:38:10.425] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я в поле
+[15Feb2025 21:38:18.890] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> аа ты еду берёшь))
+[15Feb2025 21:38:25.066] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> засадить бы потом
+[15Feb2025 21:39:18.564] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro has made the advancement [A Seedy Place]
+[15Feb2025 21:41:40.866] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я готова
+[15Feb2025 21:42:32.312] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> идём
+[15Feb2025 21:42:48.565] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты где
+[15Feb2025 21:42:51.967] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> гооо
+[15Feb2025 21:43:13.778] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я же за тобой
+[15Feb2025 21:43:21.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> аахаха
+[15Feb2025 21:43:24.061] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> надо их остановить
+[15Feb2025 21:43:35.960] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> идём
+[15Feb2025 21:44:01.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сюда в поле лошадей
+[15Feb2025 21:44:04.419] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> как-нибудь)
+[15Feb2025 21:44:13.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да)
+[15Feb2025 21:44:31.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ВОН ОН!
+[15Feb2025 21:44:40.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> татактак
+[15Feb2025 21:44:52.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вон враг плавает
+[15Feb2025 21:45:04.419] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> строим тут крепость?
+[15Feb2025 21:45:08.831] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> тут и будем строить крепость
+[15Feb2025 21:51:18.495] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой
+[15Feb2025 21:51:29.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ничего страшного)
+[15Feb2025 21:52:58.379] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой
+[15Feb2025 21:53:24.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> там в поле андермен
+[15Feb2025 21:53:29.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> поставь точку сохранения тут
+[15Feb2025 21:54:21.305] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ЮляЮляюля
+[15Feb2025 21:54:22.638] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> оцени
+[15Feb2025 21:54:31.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Юля оцени
+[15Feb2025 21:54:33.993] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> что там)
+[15Feb2025 21:54:41.381] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ну смотри
+[15Feb2025 21:54:54.563] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> оооооооооо
+[15Feb2025 21:54:58.537] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> идеально
+[15Feb2025 21:56:30.237] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> они куда-то пропали
+[15Feb2025 21:56:35.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> может это наш шанс?
+[15Feb2025 21:56:40.843] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> хмммммммм
+[15Feb2025 21:56:51.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я поплыву разведую, не буду вступать в бой
+[15Feb2025 21:56:58.027] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ок
+[15Feb2025 22:00:09.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> АА
+[15Feb2025 22:00:11.921] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> меня
+[15Feb2025 22:00:12.792] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> что
+[15Feb2025 22:00:14.534] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> заметили
+[15Feb2025 22:00:22.265] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Юля у них два острова
+[15Feb2025 22:00:28.382] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> как два
+[15Feb2025 22:00:28.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я уехал успел
+[15Feb2025 22:00:33.928] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> они на двух
+[15Feb2025 22:00:38.510] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> скорее возвращайся
+[15Feb2025 22:00:43.229] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> на каменном острове железо
+[15Feb2025 22:00:46.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> надо будет забраьт
+[15Feb2025 22:01:03.768] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> бутылка
+[15Feb2025 22:01:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> иитак
+[15Feb2025 22:01:59.638] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> как оно там
+[15Feb2025 22:02:02.110] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> там два острова
+[15Feb2025 22:02:08.478] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сейчас их всадников на
+[15Feb2025 22:02:10.866] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> лодках
+[15Feb2025 22:02:12.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> не видно
+[15Feb2025 22:02:16.326] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> но когда подплывём
+[15Feb2025 22:02:18.774] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> они появятся
+[15Feb2025 22:02:30.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я думаю будет трудно завоевать корабль
+[15Feb2025 22:02:35.094] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> как насчёт поджеч
+[15Feb2025 22:02:36.492] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> а и ещё
+[15Feb2025 22:02:40.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты слушаешь?
+[15Feb2025 22:02:44.866] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 22:02:47.565] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ещё вот что
+[15Feb2025 22:02:52.214] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> это другие пираты
+[15Feb2025 22:02:57.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> не те что отняли наш корабль
+[15Feb2025 22:03:06.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> как не те
+[15Feb2025 22:03:08.966] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> мы можем их сжеч
+[15Feb2025 22:03:12.729] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> это другие
+[15Feb2025 22:03:21.384] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> как же нам теперь вернуть наше
+[15Feb2025 22:03:22.871] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> эх
+[15Feb2025 22:03:29.459] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ладно
+[15Feb2025 22:03:37.619] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я пока прив жечь
+[15Feb2025 22:03:38.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> мы можем вернуть наше в другом путешествии
+[15Feb2025 22:03:42.255] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> против
+[15Feb2025 22:03:44.805] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пончл
+[15Feb2025 22:03:46.212] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> тогда
+[15Feb2025 22:03:48.990] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> смотри как будет
+[15Feb2025 22:03:56.215] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> один плывёт на лодке вперёд отвлекает
+[15Feb2025 22:03:58.085] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> там 2 корабля или острова?
+[15Feb2025 22:04:01.923] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> другой стреляет из лука в их лодки
+[15Feb2025 22:04:12.830] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> один корабль врага и два острова врагов
+[15Feb2025 22:04:20.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> кпц
+[15Feb2025 22:04:24.822] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> как тебе план?
+[15Feb2025 22:04:27.859] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> а сюда они попрывут?
+[15Feb2025 22:04:36.438] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> может завоевтаь один остров с железом и остреливаться
+[15Feb2025 22:04:42.870] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сюда она не прорвут
+[15Feb2025 22:04:54.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вон он
+[15Feb2025 22:04:56.056] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> плавает
+[15Feb2025 22:04:57.959] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> шумахер
+[15Feb2025 22:05:03.510] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> их несколько
+[15Feb2025 22:05:05.212] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> давай попробуем его
+[15Feb2025 22:05:08.832] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> о
+[15Feb2025 22:05:11.174] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ОН АТАКУЕТ
+[15Feb2025 22:05:16.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> есть
+[15Feb2025 22:05:22.218] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ура
+[15Feb2025 22:05:27.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ЖЕЧЬ
+[15Feb2025 22:06:02.234] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> надо остальных попроовать подманить так же
+[15Feb2025 22:06:29.374] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> предлагаю в эту ночь завоевать тот остров
+[15Feb2025 22:06:32.431] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> каменный
+[15Feb2025 22:06:35.695] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> рядом с кораблём
+[15Feb2025 22:06:39.911] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> подплывём сзади
+[15Feb2025 22:06:58.367] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> смотри как лук блестит
+[15Feb2025 22:07:01.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> у скелета отобрал
+[15Feb2025 22:07:01.788] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> хорошо. тогда начнм с острова
+[15Feb2025 22:07:05.136] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я поодерживаю
+[15Feb2025 22:07:10.239] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> о
+[15Feb2025 22:07:14.386] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> у тебяесть стрелы?
+[15Feb2025 22:07:14.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> рил блестит
+[15Feb2025 22:07:19.860] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> 6
+[15Feb2025 22:07:23.863] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> давай мне
+[15Feb2025 22:07:29.744] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты плывёшь на остров
+[15Feb2025 22:07:39.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> хорошо
+[15Feb2025 22:07:40.528] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> а я плыву за тобой отстреливаю тех кто поплывёт за тобой
+[15Feb2025 22:07:47.737] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> супер план
+[15Feb2025 22:07:48.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сейчас сделаем тебе лодку
+[15Feb2025 22:07:51.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> уже час
+[15Feb2025 22:07:55.835] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мне нужно насон
+[15Feb2025 22:08:01.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мы не успеваем
+[15Feb2025 22:08:07.271] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> на сон?
+[15Feb2025 22:08:18.735] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> давай на остров попадём и всё
+[15Feb2025 22:08:21.192] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> да
+[15Feb2025 22:08:28.654] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> хорошо
+[15Feb2025 22:08:31.406] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> гоним
+[15Feb2025 22:08:32.879] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> итак садись на лодку и плыви с топором
+[15Feb2025 22:08:55.863] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> плыви
+[15Feb2025 22:09:09.420] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нет сзади надо
+[15Feb2025 22:09:13.159] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты не с той стороны
+[15Feb2025 22:09:36.565] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> на остров
+[15Feb2025 22:09:39.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> сюда?
+[15Feb2025 22:09:42.319] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> на этот
+[15Feb2025 22:09:50.492] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> итак
+[15Feb2025 22:10:09.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> когда взрывается крипер ставь щит
+[15Feb2025 22:10:18.432] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что это
+[15Feb2025 22:10:41.680] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> интересно
+[15Feb2025 22:10:43.336] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> отрава
+[15Feb2025 22:10:46.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нас хотят отправить
+[15Feb2025 22:11:14.409] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> стрелы закончились
+[15Feb2025 22:11:21.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> за нами гнался на лодке один
+[15Feb2025 22:11:23.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я его победил
+[15Feb2025 22:11:28.670] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> отлично
+[15Feb2025 22:11:41.409] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ставь кровати пока
+[15Feb2025 22:11:45.333] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> тут тоже хорошая база для крепости
+[15Feb2025 22:11:58.069] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ая припас там оставила
+[15Feb2025 22:11:59.474] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ахах
+[15Feb2025 22:12:32.884] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> го я под водой сгоняю до башни 1
+[15Feb2025 22:12:43.109] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нет
+[15Feb2025 22:12:44.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> опасно
+[15Feb2025 22:12:46.785] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> давай на лодку
+[15Feb2025 22:12:48.531] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вместке
+[15Feb2025 22:12:49.979] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ок
+[15Feb2025 22:13:15.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> опасно
+[15Feb2025 22:13:20.024] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> в нас трезубцы летят
+[15Feb2025 22:13:33.559] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ты кууда
+[15Feb2025 22:13:39.377] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> в крепость надо
+[15Feb2025 22:14:03.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хорошо что ты не поплыли
+[15Feb2025 22:14:08.594] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> под водой
+[15Feb2025 22:14:15.430] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> там опасный зомби с трезубцем
+[15Feb2025 22:14:19.530] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> от него не уйти
+[15Feb2025 22:14:21.559] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> окс
+[15Feb2025 22:14:26.873] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> нам повезло он мог лодку сломать
+[15Feb2025 22:14:28.643] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> хорошо тогда что на лодке)
+[15Feb2025 22:14:34.385] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мы везучие
+[15Feb2025 22:14:39.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> опять шумахер
+[15Feb2025 22:15:03.206] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> го
+[15Feb2025 22:15:14.412] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> гоо
+[15Feb2025 22:15:55.509] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> опасные
+[15Feb2025 22:15:57.409] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вон плавают
+[15Feb2025 22:16:01.674] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> их трое уже
+[15Feb2025 22:16:03.370] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> жесть
+[15Feb2025 22:17:46.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> Яро
+[15Feb2025 22:17:48.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> захватчик
+[15Feb2025 22:18:00.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> поедА
+[15Feb2025 22:18:04.718] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ПОБЕДа
+[15Feb2025 22:18:11.963] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> под нами железо
+[15Feb2025 22:18:13.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> я добуду
+[15Feb2025 22:18:18.812] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro was shot by Pillager
+[15Feb2025 22:18:23.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> о нет
+[15Feb2025 22:18:29.919] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> чёрт
+[15Feb2025 22:18:39.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я на крепости 1
+[15Feb2025 22:18:50.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> плыви пока под водой
+[15Feb2025 22:19:02.578] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> сейчас не ночь ты сможешь безопасно
+[15Feb2025 22:20:31.225] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> офигеть
+[15Feb2025 22:20:35.273] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> что там
+[15Feb2025 22:20:42.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> класный забор ставишь
+[15Feb2025 22:20:48.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> красивая у нас крепость
+[15Feb2025 22:20:53.410] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> через обычные блоки они перепрыгивают
+[15Feb2025 22:21:04.217] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> через такие не смогут
+[15Feb2025 22:21:05.238] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> надо вот тут тоже
+[15Feb2025 22:22:51.273] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> ой
+[15Feb2025 22:22:56.205] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> так они нас не видят
+[15Feb2025 22:23:04.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> если мы не готовы к бою
+[15Feb2025 22:23:45.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> красота
+[15Feb2025 22:23:50.823] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хорош
+[15Feb2025 22:24:28.542] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> итак
+[15Feb2025 22:24:31.263] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> я на сон
+[15Feb2025 22:24:34.384] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> да и я
+[15Feb2025 22:24:37.264] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> хорошо
+[15Feb2025 22:24:38.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> было
+[15Feb2025 22:24:39.968] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> супер
+[15Feb2025 22:24:43.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> ))
+[15Feb2025 22:24:44.555] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> завтра если соберёмся
+[15Feb2025 22:24:47.023] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мне тоже понрав
+[15Feb2025 22:24:49.086] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> корабль захватим
+[15Feb2025 22:24:51.305] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> мы много сделаи)
+[15Feb2025 22:24:55.928] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> да
+[15Feb2025 22:25:15.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> давай фотку
+[15Feb2025 22:25:20.906] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> напротив ихкорабля
+[15Feb2025 22:25:35.088] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> выставь щит
+[15Feb2025 22:25:44.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> победА
+[15Feb2025 22:25:53.316] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Yaro> )!
+[15Feb2025 22:26:09.320] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> вот и всё
+[15Feb2025 22:26:13.123] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Namalkin> пока Юля
+[15Feb2025 22:26:25.261] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Yaro lost connection: Disconnected
+[15Feb2025 22:26:25.262] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yaro left the game
+[15Feb2025 22:26:27.708] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Namalkin lost connection: Disconnected
+[15Feb2025 22:26:27.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Namalkin left the game
